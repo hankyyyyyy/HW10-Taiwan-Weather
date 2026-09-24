@@ -6,18 +6,10 @@ echo   Repository: https://github.com/hankyyyyyy/HW10-Taiwan-Weather.git
 echo ===================================================================
 cd /d "%~dp0"
 
-where git >nul 2>&1
-if %ERRORLEVEL% equ 0 (
-    git add .
-    git commit -m "update: Taiwan Weather Web App with contour relief basemap"
-    git branch -M main
-    git push origin main
-) else (
-    "C:\Users\user\.gemini\antigravity-ide\scratch\mingit\cmd\git.exe" add .
-    "C:\Users\user\.gemini\antigravity-ide\scratch\mingit\cmd\git.exe" commit -m "update: Taiwan Weather Web App with contour relief basemap"
-    "C:\Users\user\.gemini\antigravity-ide\scratch\mingit\cmd\git.exe" branch -M main
-    "C:\Users\user\.gemini\antigravity-ide\scratch\mingit\cmd\git.exe" push origin main
-)
+"C:\Users\user\.gemini\antigravity-ide\scratch\mingit\cmd\git.exe" add .
+"C:\Users\user\.gemini\antigravity-ide\scratch\mingit\cmd\git.exe" commit -m "feat: complete Taiwan Weather Web App with CWA API, interactive map and SQLite"
+"C:\Users\user\.gemini\antigravity-ide\scratch\mingit\cmd\git.exe" branch -M main
+"C:\Users\user\.gemini\antigravity-ide\scratch\mingit\cmd\git.exe" push -u origin main
 
 echo.
 if %ERRORLEVEL% equ 0 (
